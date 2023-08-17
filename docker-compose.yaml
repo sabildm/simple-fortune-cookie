@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  frontend:
+    image: kjumbe/frontend
+    ports:
+      - 8080:8080
+    depends_on:
+      - backend
+    environment:
+      - BACKEND_DNS=backend
+
+  backend:
+    image: kjumbe/backend
+    
