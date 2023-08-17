@@ -1,0 +1,4 @@
+on: push
+jobs:
+  Build:
+    runs-on: golang-latest
